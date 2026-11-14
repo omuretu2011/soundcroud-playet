@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0f0f11">
+<meta name="description" content="勉強・作業の集中用ハードコア／音ゲー系プレイヤー。ホーム画面から開いてすぐ再生できます。">
+<link rel="manifest" href="data:application/octet-stream;base64,eyJiYWNrZ3JvdW5kX2NvbG9yIjoiIzBmMGYxMSIsImRlc2NyaXB0aW9uIjoi5YuJ5by344O75L2c5qWt44Gu6ZuG5Lit55So44OP44O844OJ44Kz44Ki77yP6Z+z44Ky44O857O744OX44Os44Kk44Ok44O844CC6ZaL44GE44Gm44GZ44GQ5YaN55Sf44Gn44GN44G+44GZ44CCIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJpY29ucyI6W3sicHVycG9zZSI6ImFueSIsInNpemVzIjoiMTkyeDE5MiIsInNyYyI6Imljb24tMTkyLnBuZyIsInR5cGUiOiJpbWFnZS9wbmcifSx7InB1cnBvc2UiOiJhbnkiLCJzaXplcyI6IjUxMng1MTIiLCJzcmMiOiJpY29uLTUxMi5wbmciLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJwdXJwb3NlIjoibWFza2FibGUiLCJzaXplcyI6IjUxMng1MTIiLCJzcmMiOiJpY29uLTUxMi5wbmciLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJsYW5nIjoiamEiLCJuYW1lIjoiU291bmRDbG91ZOOCpuOCo+OCuOOCp+ODg+ODiCIsIm9yaWVudGF0aW9uIjoicG9ydHJhaXQiLCJzY29wZSI6Ii4uLyIsInNob3J0X25hbWUiOiJTQ+OCpuOCo+OCuOOCp+ODg+ODiCIsInN0YXJ0X3VybCI6Ii4uL2luZGV4Lmh0bWwiLCJ0aGVtZV9jb2xvciI6IiMwZjBmMTEifQ==">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAADSklEQVR4nO3dUU7bQBRA0aRii7DIbpJ+RJUQLYb4gmc8OeczIGElV08TzwhfX58vsNuv0RfAuQmIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREMnT6AtYxe/X96+8XEdcx9Gu/r1L9W86b62ekYCC7XTeWjcja6C9vl7Pvb98KgLaZUcQizYkIBIB3W/3LFlxCAmIREB3ilNkuSEkIBIBkQiIREAkAiIREImASB7mPNCjntf5aQ8Q0Ef37m6vy6hZOqCv3PaVUbPuGsh5nUMsGpDzOkdZNCCOsmJAzuscaOlF9DL+W/YcC//lJtBi53V+v27dhpjgak2gWX0xjtG3IZabQGu4d7SMG0UCms++GgY1JCASAU2mDJIRQ0hAJAKaSR8hhw8hAZEIiERAJNPciZ54u4cNEwS0se4bfZ+eTw0N6CTbPWwYtwY6z3YPGwYFdKrtHjb4FkYyIqCzbfewwQQiOTygE273sMEEIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgksMD6o8+9fDUmZhAJCMCKiPE+JmMCUQyKKB9g8T4mc+4CXRvDeqZ0tPIP35r4tNnoEpnYkMDutnISDrTmyCgG62ck29hJAIiERCJgGZywo1CAZEIaDJn2ygUEImA5nOqjUIBTek8G4XT3InmnZNsFC43geIbOvrzeO/l+uElbfzoQCbQGUwQykeWm0CX8HZP/DlNa8WAONCiAe2YJcbPLosGdLkzCPXstfQi+ivfhKXTLB3QzUcZSec7PEBAN3L5GeuugTiEgEgERCIgEgGRCIhEQCQCutNi540yAZEI6H7OG70hIBIB7eK80V8C2st5o8vlcrlcX59HX8LZPfZ5IwF9k0c9byQgEmsgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIvkDR/aAmm7DyEIAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAC/UlEQVR4nO3dW07cQBRAwZkoW4RFZpPkA2UURRwwkJl+uOozD8mKj9y53Ua+vjxd4E0/Rl8A8xIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRykn6MvYDW/Xt74xefrw6/jEa5+kPqoN7P423aJWFaO+bCMg39mKeI44Phd36sPcXzks/d7oz7E8a6v3eld+hAHSRztOw+ALR4e4iCJgyQOkjhI4iCJgyQO0r5H9mc6W7+THeN4ZwPq9bckcsx2y8opz9bvZK84znq2ficbxXHis/U72SWOc5+t38kucXAHW0wr3zxbn2R4mW/23iKO1c06e1tWRpt49hbHUHPP3uIYZ/rZWxyDrDB7i4MkjhEWea9dHCRxkMRBGr1DOt+eMTfj4ph1z5ibQcvKxHvG3IyIY+49Y24eHsf0e8bcPDaOFfaMuTHKkh4YxyJ7xtx4cpDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIH6YFxfOfLS77aNIInB+mxcXztAeCxMcjDnxyfvdPKGGfEsnL8fitjqEH/5zhy15Ux2rjvyr7eex8dntjoL1LrYGJGWZI4SOIgiWOERU4SxEESxyArnCSIY5zpTxLEMdTcJwniGG3ik4TRO6Rc5j1J2CKO5+vb/7IH/+4k5rmSPywrpF3iWGEyXM4ucVwWmAyXs1Ecl9knw+XsFcdl6slwOVtMK/+YdTJczo5xvNLBt223rPD/iIMkDpI4SOIgiYMkDpI42iLviN+POEjieNe53wQQx0dO/CaAOA4465sA4jjmlG8CXF+eRl/CWs70JoA4SJYVkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iD9BvwXd9SEAC0LAAAAAElFTkSuQmCC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SCウィジェット">
+<title>SoundCloudウィジェット</title>
+<style>
+  :root{--bg:#0f0f11;--surface:#17171a;--surface-2:#1e1e22;--line:#2a2a30;--text:#f4f4f5;--muted:#a1a1aa;--muted2:#71717a;--accent:#ff5500;--accent-soft:#ff55001a;--radius:16px}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  button,[role="button"]{min-height:44px}
+  .wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+  @media(min-width:720px){.wrap{padding:32px 24px 64px}}
+  .kicker{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .kicker::before{content:"";width:22px;height:2px;background:var(--accent);display:inline-block}
+  h1{margin:10px 0 8px;font-size:32px;line-height:1.15;letter-spacing:-.02em;font-weight:800}
+  @media(min-width:720px){h1{font-size:42px}}
+  h1 span{color:var(--accent)}
+  .lead{color:var(--muted);font-size:15px;margin:0;max-width:620px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .pill{font-size:12.5px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:#d4d4d8}
+  .pill b{color:#fff}
+  .section{margin-top:32px}
+  .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+  .section-head h2{font-size:18px;margin:0;letter-spacing:-.01em}
+  .section-head p{margin:0;color:var(--muted2);font-size:13px;white-space:nowrap}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .card + .card{margin-top:16px}
+  .now-playing{padding:18px 18px 14px}
+  @media(min-width:720px){.now-playing{padding:20px 22px 16px}}
+  .np-label{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0}
+  .np-title{font-size:20px;font-weight:800;line-height:1.3;letter-spacing:-.01em;margin:6px 0 0}
+  .np-artist{color:var(--muted);font-size:14px;margin:2px 0 0}
+  .fav{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12.5px;font-weight:700;color:#ffb08a;background:var(--accent-soft);border:1px solid #ff550033;padding:5px 9px;border-radius:999px}
+  .embed-wrap{position:relative;background:#000;border-top:1px solid var(--line)}
+  .embed-wrap.sc{height:300px}
+  @media(max-width:520px){.embed-wrap.sc{height:260px}}
+  .embed-wrap.yt{aspect-ratio:16/9}
+  .embed-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .controls{padding:14px 16px 16px;background:var(--surface-2);border-top:1px solid var(--line)}
+  .progress{height:6px;border-radius:999px;background:#2e2e34;overflow:hidden;cursor:pointer}
+  .progress-bar{height:100%;width:0%;background:var(--accent);border-radius:999px;transition:width .25s linear}
+  .time-row{display:flex;justify-content:space-between;font-size:12px;color:var(--muted2);margin-top:6px;font-variant-numeric:tabular-nums}
+  .control-row{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+  .btn-play{width:56px;height:56px;min-height:56px;border-radius:50%;border:0;cursor:pointer;background:var(--accent);color:#fff;font-size:22px;line-height:1;display:grid;place-items:center;flex:0 0 auto}
+  .btn-play:active{transform:scale(.96)}
+  .btn-sub{min-height:44px;padding:8px 14px;border-radius:10px;cursor:pointer;background:var(--surface);border:1px solid var(--line);color:var(--text);font-size:13.5px;font-weight:700;font-family:inherit}
+  .btn-sub:disabled{opacity:.4;cursor:default}
+  .play-status{font-size:12.5px;color:var(--muted);margin-left:auto}
+  .volume-row{display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .volume-label{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+  .volume-slider{flex:1 1 auto;min-width:0;height:44px;accent-color:var(--accent);cursor:pointer;background:transparent;margin:0}
+  .volume-value{flex:0 0 auto;min-width:44px;text-align:right;font-size:13px;font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+  .fallback{display:none;margin-top:12px;padding:12px 14px;border:1px solid #ff550055;border-radius:12px;background:var(--accent-soft)}
+  .fallback.show{display:block}
+  .fallback p{margin:0;font-size:13.5px;color:#f4f4f5}
+  .fallback .fb-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .fallback .btn-sub{background:var(--surface-2)}
+  .track-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+  .track-item{width:100%;display:flex;gap:12px;align-items:center;text-align:left;cursor:pointer;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--text);font-family:inherit}
+  .track-item:hover{border-color:#3f3f46;background:var(--surface-2)}
+  .track-item.is-active{border-color:var(--accent);background:var(--accent-soft)}
+  .track-num{flex:0 0 auto;width:36px;height:36px;border-radius:9px;display:grid;place-items:center;background:#27272a;border:1px solid var(--line);font-weight:800;font-size:13px}
+  .track-item.is-active .track-num{background:var(--accent);border-color:var(--accent);color:#fff}
+  .track-item .t-main{flex:1 1 auto;min-width:0}
+  .track-item .t-main strong{display:block;font-size:15.5px;line-height:1.35}
+  .track-item .t-main span{display:block;font-size:13px;color:var(--muted)}
+  .track-state{margin-left:auto;flex:0 0 auto;font-size:12px;font-weight:700;color:#ffb08a;white-space:nowrap}
+  .card-top{padding:18px 18px 14px}
+  @media(min-width:720px){.card-top{padding:20px 22px 16px}}
+  .track-head{display:flex;gap:14px;align-items:flex-start}
+  .badge{flex:0 0 auto;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:.02em;background:var(--accent);color:#fff}
+  .badge.dark{background:#27272a;border:1px solid var(--line);color:#fff}
+  .track-head h3{margin:0;font-size:19px;line-height:1.3;letter-spacing:-.01em}
+  .track-head h3 a{text-decoration:none}
+  .track-head h3 a:hover{text-decoration:underline}
+  .artist{color:var(--muted);font-size:14px;margin:2px 0 0}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:#d4d4d8}
+  .tag.orange{background:var(--accent-soft);border-color:#ff550033;color:#ffb08a}
+  .desc{color:var(--muted);font-size:14px;margin:12px 0 0}
+  .card-foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding:12px 14px;background:var(--surface-2);border-top:1px solid var(--line)}
+  .source-link{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:8px 12px;border-radius:10px;background:#fff;color:#111;text-decoration:none;font-weight:700;font-size:13.5px}
+  .source-link.sc{background:var(--accent);color:#fff}
+  .hint{font-size:12.5px;color:var(--muted)}
+  .artist-grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:640px){.artist-grid{grid-template-columns:1fr 1fr}}
+  .artist-card{display:flex;align-items:center;gap:14px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;min-height:72px}
+  .artist-card:hover{border-color:#3f3f46;background:var(--surface-2)}
+  .avatar{width:48px;height:48px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-weight:800;font-size:15px;background:#27272a;border:1px solid var(--line)}
+  .artist-card strong{display:block;font-size:16px;line-height:1.3}
+  .artist-card span{display:block;font-size:13px;color:var(--muted)}
+  .arrow{margin-left:auto;color:var(--muted);font-size:18px}
+  .pending{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+  .pending-item{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-top:1px solid var(--line)}
+  .pending-item:first-child{border-top:0}
+  .dot{width:8px;height:8px;border-radius:50%;background:#52525b;margin-top:8px;flex:0 0 auto}
+  .pending-item strong{font-size:14.5px}
+  .pending-item p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+  .status{margin-left:auto;flex:0 0 auto;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:4px 8px;border-radius:999px;border:1px dashed #3f3f46;color:#a1a1aa;background:#18181b;white-space:nowrap}
+  .note{margin-top:12px;padding:14px 16px;border-radius:12px;background:#18181b;border:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  .note strong{color:#e4e4e7}
+  .install{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:18px}
+  @media(min-width:720px){.install{padding:20px 22px}}
+  .install h3{margin:0 0 6px;font-size:16px}
+  .install p{margin:0;color:var(--muted);font-size:13.5px}
+  .install ol{margin:12px 0 0;padding-left:20px;color:#d4d4d8;font-size:14px}
+  .install ol li{margin-top:6px}
+  .install ol li:first-child{margin-top:0}
+  .install-cols{display:grid;grid-template-columns:1fr;gap:16px;margin-top:4px}
+  @media(min-width:640px){.install-cols{grid-template-columns:1fr 1fr}}
+  .install-cols h4{margin:12px 0 0;font-size:14px;color:#fff}
+  .btn-install{display:none;margin-top:14px;min-height:48px;padding:10px 18px;border:0;border-radius:12px;cursor:pointer;background:var(--accent);color:#fff;font-weight:800;font-size:15px;font-family:inherit;width:100%}
+  .btn-install.show{display:block}
+  footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted2);font-size:12.5px;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Study / Focus — Hardcore</div>
+    <h1>開かずに、<span>すぐ聴く。</span></h1>
+    <p class="lead">勉強・作業の集中用に、お気に入りのハードコア／音ゲー系だけを集めたウィジェット。リストから曲を選べばそのまま再生が始まり、終わったら次の曲へ自動で進みます。ホーム画面に追加すれば、アイコンからそのまま開けます。</p>
+    <div class="meta-row">
+      <span class="pill">SoundCloud <b>1曲</b></span>
+      <span class="pill">ジャンル <b>Hardcore / 音ゲー</b></span>
+      <span class="pill">用途 <b>勉強・作業BGM</b></span>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="playable-title">
+    <div class="section-head">
+      <h2 id="playable-title">今すぐ再生</h2>
+      <p>SoundCloudプレイヤー</p>
+    </div>
+
+    <article class="card">
+      <div class="now-playing">
+        <p class="np-label">Now Playing</p>
+        <p class="np-title" id="np-title">Viyella's Nightmare</p>
+        <p class="np-artist" id="np-artist">Laur — 『Afflict』収録</p>
+        <span class="fav" id="np-fav">★ 一番のお気に入り</span>
+      </div>
+      <div class="embed-wrap sc">
+        <iframe id="sc-player" title="SoundCloudプレイヤー"
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ha-kuga-142341965/laur-viyellas-nightmare&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+          loading="eager" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+      <div class="controls">
+        <div class="progress" id="progress" role="slider" aria-label="再生位置" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="time-row"><span id="time-current">0:00</span><span id="time-duration">0:00</span></div>
+        <div class="control-row">
+          <button class="btn-play" id="btn-toggle" type="button" aria-label="再生">▶</button>
+          <button class="btn-sub" id="btn-prev" type="button">⏮ 前へ</button>
+          <button class="btn-sub" id="btn-next" type="button">次へ ⏭</button>
+          <span class="play-status" id="play-status">読み込み中…</span>
+        </div>
+        <div class="volume-row">
+          <label class="volume-label" for="volume-slider">🔊 音量</label>
+          <input class="volume-slider" id="volume-slider" type="range" min="0" max="100" step="1" value="70" aria-label="音量">
+          <span class="volume-value" id="volume-value" aria-live="polite">70%</span>
+        </div>
+        <div class="fallback" id="fallback" role="alert">
+          <p>この端末では埋め込みプレイヤーの再生が始まりませんでした。プレイヤーを読み直すか、SoundCloudで直接開いて聴けます。</p>
+          <div class="fb-row">
+            <button class="btn-sub" id="btn-retry" type="button">プレイヤーを読み直す</button>
+            <a class="source-link sc" id="fb-source" href="https://soundcloud.com/ha-kuga-142341965/laur-viyellas-nightmare" target="_blank" rel="noopener">SoundCloudで開く ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <a class="source-link sc" id="np-source" href="https://soundcloud.com/ha-kuga-142341965/laur-viyellas-nightmare" target="_blank" rel="noopener">SoundCloudで開く ↗</a>
+        <span class="hint">曲が終わるとリストの次の曲を自動再生します</span>
+      </div>
+    </article>
+
+    <ul class="track-list" id="track-list" aria-label="曲リスト"></ul>
+  </section>
+
+  <section class="section" aria-labelledby="yt-title">
+    <div class="section-head">
+      <h2 id="yt-title">YouTubeの1曲</h2>
+      <p>動画プレイヤー</p>
+    </div>
+    <article class="card">
+      <div class="card-top">
+        <div class="track-head">
+          <div class="badge dark">YT</div>
+          <div>
+            <h3><a href="https://www.youtube.com/watch?v=Lqn42JJxS3I" target="_blank" rel="noopener">sink to the deep sea world</a></h3>
+            <p class="artist">黒魔 / Chroma</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag orange">185 BPM</span>
+          <span class="tag">YouTube</span>
+        </div>
+        <p class="desc">お気に入りの1曲。Viyella's Nightmareと並べて、集中用に切り替えて聴けるようにしています。</p>
+      </div>
+      <div class="embed-wrap yt">
+        <iframe title="黒魔 / Chroma - sink to the deep sea world - YouTubeプレイヤー"
+          src="https://www.youtube.com/embed/Lqn42JJxS3I?rel=0"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="card-foot">
+        <a class="source-link" href="https://www.youtube.com/watch?v=Lqn42JJxS3I" target="_blank" rel="noopener">YouTubeで開く ↗</a>
+        <span class="hint">動画プレイヤーでそのまま再生できます</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" aria-labelledby="install-title">
+    <div class="section-head">
+      <h2 id="install-title">ホーム画面に追加</h2>
+      <p>アイコンからすぐ開く</p>
+    </div>
+    <div class="install">
+      <h3>ホーム画面のアイコンから、そのまま曲を流せます</h3>
+      <p>一度追加すれば、ブラウザを開き直さなくてもアイコンをタップするだけでこのページがアプリのように立ち上がります。</p>
+      <div class="install-cols">
+        <div>
+          <h4>iPhone（Safari）</h4>
+          <ol>
+            <li>下の共有ボタン（□に↑のマーク）をタップ</li>
+            <li>「ホーム画面に追加」を選ぶ</li>
+            <li>右上の「追加」をタップして完了</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Android（Chrome）</h4>
+          <ol>
+            <li>右上のメニュー（︙）をタップ</li>
+            <li>「アプリをインストール」または「ホーム画面に追加」を選ぶ</li>
+            <li>「インストール／追加」をタップして完了</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="artist-title">
+    <div class="section-head">
+      <h2 id="artist-title">アーティストページ</h2>
+      <p>SoundCloud</p>
+    </div>
+    <div class="artist-grid">
+      <a class="artist-card" href="https://soundcloud.com/t-pazolite" target="_blank" rel="noopener">
+        <span class="avatar">t+p</span>
+        <span><strong>t+pazolite</strong><span>SoundCloudページを開く — Tempestissimo ほか</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="artist-card" href="https://soundcloud.com/leaf-7" target="_blank" rel="noopener">
+        <span class="avatar">LeaF</span>
+        <span><strong>LeaF</strong><span>SoundCloudページを開く — MARENOL / Armageddon ほか</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pending-title">
+    <div class="section-head">
+      <h2 id="pending-title">リンク待ちリスト</h2>
+      <p>曲リンクが来たら上のリストに追加</p>
+    </div>
+    <div class="pending">
+      <div class="pending-item">
+        <span class="dot"></span>
+        <div><strong>t+pazolite — Tempestissimo</strong><p>個別のSoundCloud／YouTubeリンク待ち。</p></div>
+        <span class="status">リンク待ち</span>
+      </div>
+      <div class="pending-item">
+        <span class="dot"></span>
+        <div><strong>LeaF — MARENOL / Armageddon / Aleph-0</strong><p>プレイリスト常連の3曲。リンクが揃い次第プレイヤー化します。</p></div>
+        <span class="status">リンク待ち</span>
+      </div>
+      <div class="pending-item">
+        <span class="dot"></span>
+        <div><strong>Team Grimoire vs Laur</strong><p>曲名・リンク未定。分かり次第ここに追加。</p></div>
+        <span class="status">リンク待ち</span>
+      </div>
+      <div class="pending-item">
+        <span class="dot"></span>
+        <div><strong>Kobaryo / USAO / モリモリあつし</strong><p>勉強用プレイリストでよく聴くアーティスト。聴きたい曲のリンク待ち。</p></div>
+        <span class="status">リンク待ち</span>
+      </div>
+    </div>
+    <div class="note"><strong>追加のしかた：</strong> 聴きたい曲の SoundCloud か YouTube のリンクをチャットで送ってくれれば、SoundCloudの曲は上の曲リストに、YouTubeの曲はプレイヤーとして追加できます。</div>
+  </section>
+
+  <footer>
+    <span>SoundCloudウィジェット — 勉強・作業用</span>
+    <span>出典：SoundCloud / YouTube 公式埋め込み</span>
+  </footer>
+
+</div>
+
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<script>
+(function () {
+  /* 曲リスト（SoundCloud）：曲を増やすときはこの配列に足すだけ。
+     プレイヤーは1つだけ置き、SC.Widget の load() で読み替える。 */
+  var TRACKS = [
+    {
+      title: "Viyella's Nightmare",
+      artist: "Laur — 『Afflict』収録",
+      url: "https://soundcloud.com/ha-kuga-142341965/laur-viyellas-nightmare",
+      note: "一番のお気に入り。速くて大きい音が集中のスイッチになる1曲。",
+      duration: "約 4:52",
+      fav: true
+    }
+  ];
+
+  var currentIndex = 0;
+  var isPlaying = false;
+  var widget = null;
+  var widgetReady = false;
+  var durationMs = 0;
+  var pendingPlay = false;      /* 準備完了前に▶が押されたら、READY後に再生する */
+  var pendingLoad = false;      /* 準備完了前に曲が切り替わったら、READY後に load する */
+  var lastProgressAt = 0;       /* 最後に再生位置が進んだ時刻（止まり検知用） */
+  var lastPosition = -1;
+  var watchdogTimer = null;
+  var VOLUME_KEY = 'sc-widget-volume';
+  var currentVolume = 70;
+  try {
+    var storedVolume = window.localStorage ? window.localStorage.getItem(VOLUME_KEY) : null;
+    if (storedVolume !== null && storedVolume !== '') {
+      var parsedVolume = parseInt(storedVolume, 10);
+      if (!isNaN(parsedVolume) && parsedVolume >= 0 && parsedVolume <= 100) currentVolume = parsedVolume;
+    }
+  } catch (e) { currentVolume = 70; }
+
+  var iframe = document.getElementById('sc-player');
+  var btnToggle = document.getElementById('btn-toggle');
+  var btnPrev = document.getElementById('btn-prev');
+  var btnNext = document.getElementById('btn-next');
+  var statusEl = document.getElementById('play-status');
+  var npTitle = document.getElementById('np-title');
+  var npArtist = document.getElementById('np-artist');
+  var npFav = document.getElementById('np-fav');
+  var npSource = document.getElementById('np-source');
+  var progressWrap = document.getElementById('progress');
+  var progressBar = document.getElementById('progress-bar');
+  var timeCurrent = document.getElementById('time-current');
+  var timeDuration = document.getElementById('time-duration');
+  var listEl = document.getElementById('track-list');
+  var fallbackEl = document.getElementById('fallback');
+  var btnRetry = document.getElementById('btn-retry');
+  var fbSource = document.getElementById('fb-source');
+  var volumeSlider = document.getElementById('volume-slider');
+  var volumeValue = document.getElementById('volume-value');
+
+  function applyVolume() {
+    if (widgetReady && widget && typeof widget.setVolume === 'function') {
+      try { widget.setVolume(currentVolume); } catch (e) {}
+    }
+  }
+  function syncVolumeUI() {
+    if (volumeSlider) volumeSlider.value = String(currentVolume);
+    if (volumeValue) volumeValue.textContent = currentVolume + '%';
+  }
+  function setVolumeValue(v, save) {
+    var n = parseInt(v, 10);
+    if (isNaN(n)) return;
+    if (n < 0) n = 0;
+    if (n > 100) n = 100;
+    currentVolume = n;
+    syncVolumeUI();
+    applyVolume();
+    if (save) {
+      try { if (window.localStorage) window.localStorage.setItem(VOLUME_KEY, String(currentVolume)); } catch (e) {}
+    }
+  }
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', function () { setVolumeValue(volumeSlider.value, true); });
+    volumeSlider.addEventListener('change', function () { setVolumeValue(volumeSlider.value, true); });
+  }
+  syncVolumeUI();
+
+  function showFallback() { fallbackEl.classList.add('show'); }
+  function hideFallback() { fallbackEl.classList.remove('show'); }
+
+  /* 再生中のはずなのに位置が進まない状態を検知して、案内を出す */
+  function startWatchdog() {
+    stopWatchdog();
+    lastProgressAt = Date.now();
+    watchdogTimer = setInterval(function () {
+      if (!isPlaying) { stopWatchdog(); return; }
+      if (Date.now() - lastProgressAt > 8000) {
+        stopWatchdog();
+        statusEl.textContent = '再生が進んでいません';
+        showFallback();
+      }
+    }, 1000);
+  }
+  function stopWatchdog() {
+    if (watchdogTimer) { clearInterval(watchdogTimer); watchdogTimer = null; }
+  }
+
+  function fmt(ms) {
+    if (!ms || isNaN(ms)) return '0:00';
+    var sec = Math.floor(ms / 1000);
+    var m = Math.floor(sec / 60);
+    var s = sec % 60;
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  function renderList() {
+    listEl.innerHTML = '';
+    TRACKS.forEach(function (track, i) {
+      var li = document.createElement('li');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'track-item' + (i === currentIndex ? ' is-active' : '');
+      btn.setAttribute('aria-current', i === currentIndex ? 'true' : 'false');
+      var num = document.createElement('span');
+      num.className = 'track-num';
+      num.textContent = String(i + 1);
+      var main = document.createElement('span');
+      main.className = 't-main';
+      var strong = document.createElement('strong');
+      strong.textContent = track.title;
+      var sub = document.createElement('span');
+      sub.textContent = track.artist + (track.duration ? ' ・ ' + track.duration : '');
+      main.appendChild(strong);
+      main.appendChild(sub);
+      var state = document.createElement('span');
+      state.className = 'track-state';
+      state.textContent = i === currentIndex ? (isPlaying ? '▶ 再生中' : '選択中') : '';
+      btn.appendChild(num);
+      btn.appendChild(main);
+      btn.appendChild(state);
+      btn.addEventListener('click', function () {
+        if (i === currentIndex && widgetReady && widget) {
+          widget.toggle();
+        } else if (i === currentIndex) {
+          requestPlay();
+        } else {
+          loadTrack(i, true);
+        }
+      });
+      li.appendChild(btn);
+      listEl.appendChild(li);
+    });
+    var single = TRACKS.length <= 1;
+    btnPrev.disabled = single;
+    btnNext.disabled = single;
+  }
+
+  function syncNowPlaying() {
+    var track = TRACKS[currentIndex];
+    npTitle.textContent = track.title;
+    npArtist.textContent = track.artist;
+    npSource.href = track.url;
+    fbSource.href = track.url;
+    npFav.style.display = track.fav ? '' : 'none';
+    renderList();
+  }
+
+  function setPlaying(playing) {
+    isPlaying = playing;
+    btnToggle.textContent = playing ? '⏸' : '▶';
+    btnToggle.setAttribute('aria-label', playing ? '一時停止' : '再生');
+    statusEl.textContent = playing ? '再生中' : '一時停止中';
+    if (playing) { hideFallback(); startWatchdog(); } else { stopWatchdog(); }
+    syncNowPlaying();
+  }
+
+  /* ▶が押されたときの入口。準備が終わっていなければREADY後に再生する。
+     iframe の src は書き換えない（読み込み中 iframe を差し替えると
+     端末によってはプレイヤー自体が表示されなくなるため）。 */
+  function requestPlay() {
+    if (widgetReady && widget) {
+      widget.play();
+    } else {
+      pendingPlay = true;
+      statusEl.textContent = '読み込み中… まもなく再生します';
+    }
+  }
+
+  function loadTrack(index, autoplay) {
+    currentIndex = ((index % TRACKS.length) + TRACKS.length) % TRACKS.length;
+    durationMs = 0;
+    progressBar.style.width = '0%';
+    timeCurrent.textContent = '0:00';
+    timeDuration.textContent = '0:00';
+    statusEl.textContent = '読み込み中…';
+    if (widgetReady && widget) {
+      widget.load(TRACKS[currentIndex].url, {
+        auto_play: !!autoplay,
+        color: 'ff5500',
+        visual: true,
+        show_comments: true,
+        show_user: true,
+        hide_related: false,
+        show_reposts: false,
+        show_teaser: true,
+        callback: function () {
+          applyVolume();
+          widget.getDuration(function (d) {
+            durationMs = d;
+            timeDuration.textContent = fmt(d);
+          });
+        }
+      });
+      if (!autoplay) setPlaying(false);
+    } else if (autoplay) {
+      /* まだ準備中：曲の表示だけ切り替え、READY後に load して再生する */
+      pendingPlay = true;
+      pendingLoad = true;
+    }
+    syncNowPlaying();
+  }
+
+  btnToggle.addEventListener('click', function () {
+    if (widgetReady && widget) {
+      widget.toggle();
+    } else if (isPlaying) {
+      /* ここに来るのは表示だけ進んでしまった場合のみ：状態を正直に戻す */
+      isPlaying = false;
+      btnToggle.textContent = '▶';
+      statusEl.textContent = '待機中 — ▶で再生';
+      renderList();
+    } else {
+      requestPlay();
+    }
+  });
+  btnRetry.addEventListener('click', function () {
+    hideFallback();
+    statusEl.textContent = '読み込み中…';
+    if (widgetReady && widget) {
+      pendingPlay = false;
+      widget.load(TRACKS[currentIndex].url, {
+        auto_play: true,
+        color: 'ff5500',
+        visual: true,
+        show_comments: true,
+        show_user: true,
+        hide_related: false,
+        show_reposts: false,
+        show_teaser: true,
+        callback: function () {
+          applyVolume();
+          widget.getDuration(function (d) {
+            durationMs = d;
+            timeDuration.textContent = fmt(d);
+          });
+        }
+      });
+    } else {
+      /* 準備未完了のままフラグだけ立てても、READY が来ないケースでは
+         リトライが空振りする。iframe 要素を作り直してプレイヤーを
+         実際に読み込み直し、ウィジェットを再初期化する。
+         READY 後は pendingPlay／pendingLoad で自動再生される。 */
+      pendingPlay = true;
+      pendingLoad = true;
+      widgetReady = false;
+      widget = null;
+      stopWatchdog();
+      var parent = iframe.parentNode;
+      var fresh = iframe.cloneNode(false);
+      parent.replaceChild(fresh, iframe);
+      iframe = fresh;
+      initWidget();
+    }
+  });
+  btnNext.addEventListener('click', function () { loadTrack(currentIndex + 1, true); });
+  btnPrev.addEventListener('click', function () { loadTrack(currentIndex - 1, true); });
+
+  progressWrap.addEventListener('click', function (e) {
+    if (!widgetReady || !widget || !durationMs) return;
+    var rect = progressWrap.getBoundingClientRect();
+    var ratio = (e.clientX - rect.left) / rect.width;
+    if (ratio < 0) ratio = 0;
+    if (ratio > 1) ratio = 1;
+    widget.seekTo(durationMs * ratio);
+  });
+
+  function initWidget() {
+    /* 12秒たってもプレイヤーの準備ができなければ案内を出す */
+    setTimeout(function () {
+      if (!widgetReady) {
+        statusEl.textContent = 'プレイヤーを読み込めませんでした';
+        showFallback();
+      }
+    }, 12000);
+    if (typeof SC === 'undefined' || !SC.Widget) {
+      statusEl.textContent = 'プレイヤー内の▶でも再生できます';
+      renderList();
+      return;
+    }
+    widget = SC.Widget(iframe);
+    widget.bind(SC.Widget.Events.READY, function () {
+      widgetReady = true;
+      hideFallback();
+      applyVolume();
+      widget.getDuration(function (d) {
+        durationMs = d;
+        timeDuration.textContent = fmt(d);
+      });
+      syncNowPlaying();
+      if (pendingLoad) {
+        pendingLoad = false;
+        loadTrack(currentIndex, pendingPlay);
+        pendingPlay = false;
+      } else if (pendingPlay) {
+        pendingPlay = false;
+        statusEl.textContent = '待機中 — ▶で再生';
+        widget.play();
+      } else {
+        statusEl.textContent = '待機中 — ▶で再生';
+      }
+    });
+    widget.bind(SC.Widget.Events.PLAY, function () { setPlaying(true); });
+    widget.bind(SC.Widget.Events.PAUSE, function () { pendingPlay = false; setPlaying(false); });
+    widget.bind(SC.Widget.Events.FINISH, function () {
+      stopWatchdog();
+      loadTrack(currentIndex + 1, true);
+    });
+    widget.bind(SC.Widget.Events.PLAY_PROGRESS, function (e) {
+      if (e && e.currentPosition != null) {
+        if (e.currentPosition !== lastPosition) {
+          lastPosition = e.currentPosition;
+          lastProgressAt = Date.now();
+        }
+        timeCurrent.textContent = fmt(e.currentPosition);
+        if (durationMs) {
+          var pct = Math.min(100, (e.currentPosition / durationMs) * 100);
+          progressBar.style.width = pct + '%';
+          progressWrap.setAttribute('aria-valuenow', String(Math.round(pct)));
+        } else if (e.relativePosition != null) {
+          progressBar.style.width = (e.relativePosition * 100) + '%';
+        }
+      }
+    });
+    widget.bind(SC.Widget.Events.ERROR, function () {
+      stopWatchdog();
+      statusEl.textContent = '読み込みエラー';
+      showFallback();
+    });
+  }
+
+  initWidget();
+  renderList();
+
+  /* PWA: Service Worker 登録（アプリシェルのみキャッシュ、音声ストリームは対象外） */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('data:application/javascript;base64,LyogU291bmRDbG91ZOOCpuOCo+OCuOOCp+ODg+ODiCAtIFNlcnZpY2UgV29ya2VyCiAgIOOCouODl+ODquOCt+OCp+ODq++8iOODmuODvOOCuOODu+ODnuODi+ODleOCp+OCueODiOODu+OCouOCpOOCs+ODs++8ieOBoOOBkeOCkuOCreODo+ODg+OCt+ODpeOBl+OBvuOBmeOAggogICBTb3VuZENsb3VkIC8gWW91VHViZSDjga7pn7Plo7Djg7vli5XnlLvjgrnjg4jjg6rjg7zjg6Djga/jgq3jg6Pjg4Pjgrfjg6XjgZfjgb7jgZvjgpPjgIIgKi8KdmFyIENBQ0hFX05BTUUgPSAnc2Mtd2lkZ2V0LXYxJzsKdmFyIEFQUF9TSEVMTCA9IFsKICAnLi4vaW5kZXguaHRtbCcsCiAgJy4vbWFuaWZlc3Qud2VibWFuaWZlc3QnLAogICcuL2ljb24tMTkyLnBuZycsCiAgJy4vaWNvbi01MTIucG5nJywKICAnLi9hcHBsZS10b3VjaC1pY29uLnBuZycKXTsKCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignaW5zdGFsbCcsIGZ1bmN0aW9uIChldmVudCkgewogIGV2ZW50LndhaXRVbnRpbCgKICAgIGNhY2hlcy5vcGVuKENBQ0hFX05BTUUpLnRoZW4oZnVuY3Rpb24gKGNhY2hlKSB7CiAgICAgIC8vIDHjgaTlpLHmlZfjgZfjgabjgoLlhajkvZPjgYzmraLjgb7jgonjgarjgYTjgojjgYblgIvliKXjgavov73liqDjgZnjgosKICAgICAgcmV0dXJuIFByb21pc2UuYWxsKEFQUF9TSEVMTC5tYXAoZnVuY3Rpb24gKHVybCkgewogICAgICAgIHJldHVybiBjYWNoZS5hZGQodXJsKS5jYXRjaChmdW5jdGlvbiAoKSB7IC8qIOWPluW+l+OBp+OBjeOBquOBhOOCguOBruOBr+mjm+OBsOOBmSAqLyB9KTsKICAgICAgfSkpOwogICAgfSkudGhlbihmdW5jdGlvbiAoKSB7IHJldHVybiBzZWxmLnNraXBXYWl0aW5nKCk7IH0pCiAgKTsKfSk7CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgZnVuY3Rpb24gKGV2ZW50KSB7CiAgZXZlbnQud2FpdFVudGlsKAogICAgY2FjaGVzLmtleXMoKS50aGVuKGZ1bmN0aW9uIChrZXlzKSB7CiAgICAgIHJldHVybiBQcm9taXNlLmFsbChrZXlzLm1hcChmdW5jdGlvbiAoa2V5KSB7CiAgICAgICAgaWYgKGtleSAhPT0gQ0FDSEVfTkFNRSkgcmV0dXJuIGNhY2hlcy5kZWxldGUoa2V5KTsKICAgICAgfSkpOwogICAgfSkudGhlbihmdW5jdGlvbiAoKSB7IHJldHVybiBzZWxmLmNsaWVudHMuY2xhaW0oKTsgfSkKICApOwp9KTsKCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignZmV0Y2gnLCBmdW5jdGlvbiAoZXZlbnQpIHsKICB2YXIgdXJsID0gZXZlbnQucmVxdWVzdC51cmw7CiAgLy8gU291bmRDbG91ZCAvIFlvdVR1YmUg44Gq44Gp5aSW6YOo44K544OI44Oq44O844Og44O744OX44Os44Kk44Ok44O844Gv5bi444Gr44ON44OD44OI44Ov44O844Kv44G4CiAgaWYgKHVybC5pbmRleE9mKCdzb3VuZGNsb3VkLmNvbScpICE9PSAtMSB8fCB1cmwuaW5kZXhPZigneW91dHViZS5jb20nKSAhPT0gLTEgfHwgdXJsLmluZGV4T2YoJ3l0aW1nLmNvbScpICE9PSAtMSB8fCB1cmwuaW5kZXhPZignZ29vZ2xldmlkZW8uY29tJykgIT09IC0xKSB7CiAgICByZXR1cm47CiAgfQogIGlmIChldmVudC5yZXF1ZXN0Lm1ldGhvZCAhPT0gJ0dFVCcpIHJldHVybjsKICAvLyDjg5rjg7zjgrjpgbfnp7vjga/jg43jg4Pjg4jjg6/jg7zjgq/lhKrlhYjjgIHlpLHmlZfjgZfjgZ/jgonjgq3jg6Pjg4Pjgrfjg6UKICBpZiAoZXZlbnQucmVxdWVzdC5tb2RlID09PSAnbmF2aWdhdGUnKSB7CiAgICBldmVudC5yZXNwb25kV2l0aCgKICAgICAgZmV0Y2goZXZlbnQucmVxdWVzdCkuY2F0Y2goZnVuY3Rpb24gKCkgewogICAgICAgIHJldHVybiBjYWNoZXMubWF0Y2goJy4uL2luZGV4Lmh0bWwnLCB7IGlnbm9yZVNlYXJjaDogdHJ1ZSB9KTsKICAgICAgfSkKICAgICk7CiAgICByZXR1cm47CiAgfQogIC8vIOOCt+OCp+ODq+OBrumdmeeahOODleOCoeOCpOODq+OBr+OCreODo+ODg+OCt+ODpeWEquWFiAogIGV2ZW50LnJlc3BvbmRXaXRoKAogICAgY2FjaGVzLm1hdGNoKGV2ZW50LnJlcXVlc3QsIHsgaWdub3JlU2VhcmNoOiB0cnVlIH0pLnRoZW4oZnVuY3Rpb24gKGNhY2hlZCkgewogICAgICByZXR1cm4gY2FjaGVkIHx8IGZldGNoKGV2ZW50LnJlcXVlc3QpOwogICAgfSkKICApOwp9KTsK').catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
