@@ -1,4 +1,5 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "postCreateCommand": "npm install -g @google/gemini-cli @anthropic-ai/claude-code @github/copilot"
+  "postCreateCommand": "npm install -g @google/gemini-cli @anthropic-ai/claude-code @github/copilot",
+  "postStartCommand": "bash .devcontainer/setup-ssh.sh || true"
 }

@@ -1,0 +1,3 @@
+# Termax public keys, one per line. Public keys are safe to commit.
+# How to add yours: in Termax, generate an ed25519 key, copy the PUBLIC key,
+# and send it to Muse in chat. It will be added below this comment.
